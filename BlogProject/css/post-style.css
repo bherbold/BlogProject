@@ -1,0 +1,94 @@
+@import 'navBar.css';
+@import 'foot.css';
+
+html,body{
+
+    font-family: 'Orbitron', sans-serif;
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    padding-top: 0px;
+    
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 250px 100px 1fr 120px;
+    grid-template-areas: 
+    'nav1'
+    'img'
+    'hd'
+    'main'
+    'ft';
+    width: 100%;
+    height:100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#hd {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: 'hd';
+
+}
+
+h1 {
+
+    text-align: center;
+    border-bottom: solid rgb(203, 238, 255) 1px;
+    width: 250px;
+    height: 50px;
+}
+
+#main-img {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    grid-area: 'img';
+
+}
+
+#content{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    grid-area: "main";
+    height: 100%;
+
+}
+
+img {
+
+    max-width: 400px;
+
+}
+
+cite{
+    margin: 10px;
+    color: gray;
+}
+
+@media (min-width:600px){
+
+    article {
+
+        text-align: center;
+        
+    }
+
+    cite{
+
+        text-align: center;
+    }
+}
